@@ -1,0 +1,132 @@
+/* Base Font */
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Navigation Styles */
+  header {
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Nav links base style */
+  .nav-links a {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover styles for each specific nav link */
+  .nav-home:hover {
+    background-color: #f0f0f0;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .nav-work:hover {
+    background-color: #FFA500;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .nav-cv:hover {
+    background-color: #28a745;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .nav-email:hover {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .nav-about:hover {
+    background-color: #800080;
+    color: white;
+    font-weight: 700;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Hero section spacing */
+  .hero-text {
+    margin-right: 2rem;
+  }
+
+  .profile-image {
+    width: 500px; /* adjust size */
+    border-radius: 0%; /* makes it a circle */
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Layout for text + image side by side */
+.hero-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    border-radius: 0px;
+    object-fit: cover;
+  }
+  
+  /* Responsive stack on smaller screens */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-text {
+      margin-right: 0;
+    }
+  
+    .hero-image {
+      max-width: 80%;
+    }
+  }
+  
+  
